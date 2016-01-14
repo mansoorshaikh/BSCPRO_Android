@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="05dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_toLeftOf="@+id/MatchInputtextview0"
+            android:text="submited"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview0"
+            android:text="Match Up "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview0"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview1"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20dp"
+            customfontdemo:fontName="calibri.ttf" />
+
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/MatchInputtextview1"
+             android:layout_below="@+id/MatchInputtextview0"
+            android:text="sent from"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            customfontdemo:fontName="calibri.ttf" />
+
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Matchtextview1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="05dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview2"
+            android:text="day :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview2"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview3"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/MatchInputtextview3"
+            android:layout_below="@+id/MatchInputtextview2"
+            android:text="Date :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview2"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview4"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview4"
+            android:text="Time :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview4"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview5"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/MatchInputtextview5"
+            android:layout_below="@+id/MatchInputtextview4"
+            android:text="Place :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview4"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview6"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+         <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview6"
+            android:text="Name :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview6"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview7"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+         <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview7"
+            android:text="Contact :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview7"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview8"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+         <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview8"
+            android:text="Profile :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview8"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview9"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview9"
+            android:text="Trainee :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview9"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview10"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview10"
+            android:text="Trainee Contact :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview10"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview11"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview11"
+            android:text="Appt.Type :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview11"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview12"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/Matchtextview13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@+id/MatchInputtextview12"
+            android:text="Choose a Field Trainer :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            customfontdemo:fontName="calibri.ttf" />
+        
+        <com.MWC.chatapp.MyTextView
+            android:id="@+id/MatchInputtextview13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+             android:layout_below="@+id/MatchInputtextview12"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/Matchtextview13"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            customfontdemo:fontName="calibri.ttf" />
+    </RelativeLayout>
+
+</RelativeLayout>

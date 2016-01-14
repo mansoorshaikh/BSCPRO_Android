@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/menu_icon" />
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/menuBtn"
+                android:background="@drawable/navigation" >
+
+                <TextView
+                    android:id="@+id/alluserstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="NEW USERS"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/plusicon" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+         <RelativeLayout
+                  android:id="@+id/SearchLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_below="@+id/Layout"
+                 >
+
+                <EditText
+                    android:id="@+id/TRAINEE_SEARCH_EDITTEXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:hint="search" />
+            </RelativeLayout>
+        
+        <ScrollView
+            android:id="@+id/myscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SearchLayout" >
+                <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                 android:layout_below="@+id/TRAINEE_SEARCH_EDITTEXT"
+                >
+                <RelativeLayout
+                    android:id="@+id/mainlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" 
+                     android:layout_marginTop="10dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+                    >
+            </RelativeLayout>
+            <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/mainlayout"
+                    android:src="@android:color/transparent" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

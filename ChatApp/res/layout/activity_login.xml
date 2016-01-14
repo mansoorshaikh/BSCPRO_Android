@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".LoginActivity" >
+
+    <VideoView
+        android:id="@+id/myvideoview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+    </VideoView>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/Mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/imageralativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/loginimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/bscprologowhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/textlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageralativelayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:alpha="0.2"
+                    android:background="@android:color/white" >
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/usereditext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|left"
+                    android:hint="USERNAME"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="65dip"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" >
+                    <!-- android:text="Brittanioceo" -->
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/clearable_button_clear"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dip"
+                    android:alpha="0.7"
+                    android:background="@drawable/transparentimageicon"
+                    android:text="@string/icon_addbussiness"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/clearable_button_clear"
+                    android:alpha="0.7"
+                    android:background="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/textlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textlayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:alpha="0.2"
+                    android:background="@android:color/white" >
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/passwordedittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:alpha="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|left"
+                    android:hint="PASSWORD"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="65dip"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF" />
+                <!-- android:text="nextwavebase" -->
+
+                <Button
+                    android:id="@+id/clearable_button_clear2"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dip"
+                    android:alpha="0.7"
+                    android:background="@drawable/transparentimageicon"
+                    android:text="@string/icon_LOCK"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/clearable_button_clear2"
+                    android:alpha="0.7"
+                    android:background="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/buttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textlayout2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp" >
+
+                <Button
+                    android:id="@+id/logbutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:text="LOGIN"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp" >
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#d888a0"
+                    android:paddingBottom="05dp"
+                    android:paddingTop="05dp"
+                    android:text="CREATE ACCOUNT"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

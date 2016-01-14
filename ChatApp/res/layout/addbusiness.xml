@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBusinessActivity"  >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/navigationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/menu_icon" />
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/menuBtn"
+                android:background="@drawable/navigation"
+                android:gravity="center" >
+
+                <com.MWC.chatapp.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD BUSINESS"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                      customfontdemo:fontName="calibri.ttf"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/navigationLayout" >
+          
+            <RelativeLayout
+                android:id="@+id/biglayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 android:layout_marginTop="20dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp" 
+                android:paddingBottom="35dp"
+                 >
+                
+                <RelativeLayout
+                android:id="@+id/TRAINEELIST_MAIN_LAYOUT"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                >
+                <Button
+                        android:id="@+id/TRAINEE_CANCLE_BTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@android:color/transparent"
+                        android:text="CANCEL"
+                        android:layout_margin="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/TRAINEE_ADD_BTN"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/plusicon" />
+                    
+                    <EditText
+                        android:id="@+id/TRAINEE_SEARCH_EDITTEXT"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_toLeftOf="@+id/TRAINEE_ADD_BTN"
+                        android:layout_toRightOf="@+id/TRAINEE_CANCLE_BTN"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:hint="search" />
+
+                <RelativeLayout
+                android:id="@+id/TRAINEELIST_LAYOUT"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/TRAINEE_SEARCH_EDITTEXT"
+                >
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+           
+                <RelativeLayout
+                    android:id="@+id/MAILALL_LAYOUT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                <RelativeLayout
+                    android:id="@+id/datelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+
+                     <com.MWC.chatapp.MyTextView
+                        android:id="@+id/datetxt"
+                        android:layout_width="65dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="DATE"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" 
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+
+                    <EditText
+                        android:id="@+id/dateedt"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBaseline="@+id/datetxt"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right"
+                        android:hint="Date"
+                        android:imeOptions="actionDone"
+                        android:paddingRight="5dp"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/imagelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/datelayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/clientnamelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imagelayout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+
+                    <com.MWC.chatapp.MyTextView
+                        android:id="@+id/clientnametxt"
+                        android:layout_width="120dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="CLIENT NAME"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        customfontdemo:fontName="calibri.ttf"
+                         />
+
+                    <EditText
+                        android:id="@+id/clientnameedt"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBaseline="@+id/clientnametxt"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right"
+                        android:hint="First Name"
+                        android:imeOptions="actionDone"
+                        android:paddingRight="5dp"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image1layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/clientnamelayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lastnamelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/image1layout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+
+                    <com.MWC.chatapp.MyTextView
+                        android:id="@+id/lastnametxt"
+                        android:layout_width="120dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" 
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+
+                    <EditText
+                        android:id="@+id/lastnameedt"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBaseline="@+id/lastnametxt"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right"
+                        android:hint="Last Name"
+                        android:imeOptions="actionDone"
+                        android:paddingRight="5dp"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image2layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/lastnamelayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/agentlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image2layout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+                    
+                    <RelativeLayout
+                        android:id="@+id/AGENTDYNAMICLAYOUT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        >
+                        </RelativeLayout>
+
+                    <com.MWC.chatapp.MyTextView
+                        android:id="@+id/agenttxt"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="AGENT(S)"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" 
+                        android:layout_centerVertical="true"
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+
+                    
+                    <Button
+                        android:id="@+id/AddAgentButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Add"
+                        android:textSize="11sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/rounded_button_xml"
+                        ></Button>
+                        <com.MWC.chatapp.MyTextView
+                        android:id="@+id/agentedt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:layout_alignParentRight="true" 
+                        android:hint="Select 1 or 2 Agents"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                       android:layout_marginRight="50dp"
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image3layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/agentlayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/traineelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/image3layout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+
+                     <com.MWC.chatapp.MyTextView
+                        android:id="@+id/traineetxt"
+                        android:layout_width="85dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="TRAINEE"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" 
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+
+                    <EditText
+                        android:id="@+id/traineeedt"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBaseline="@+id/traineetxt"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right"
+                        android:hint="Select Trainee"
+                        android:imeOptions="actionDone"
+                        android:paddingRight="5dp"
+                        android:singleLine="true" 
+                        android:focusable="false"
+                        android:editable="false"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image4layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/traineelayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/productlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/image4layout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+
+                      <com.MWC.chatapp.MyTextView
+                        android:id="@+id/producttxt"
+                        android:layout_width="90dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="PRODUCT"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        customfontdemo:fontName="calibri.ttf"
+                         />
+
+                    <EditText
+                        android:id="@+id/productedt"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBaseline="@+id/producttxt"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right"
+                        android:hint="FFIUL"
+                        android:imeOptions="actionDone"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                       android:inputType="textCapCharacters"
+                       android:capitalize="characters"
+                         />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image5layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/productlayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/actualpointlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/image5layout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+
+                      <com.MWC.chatapp.MyTextView
+                        android:id="@+id/actualpointtxt"
+                        android:layout_width="140dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="ACTUAL POINTS"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" 
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+
+                    <EditText
+                        android:id="@+id/actualpointedt"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBaseline="@+id/actualpointtxt"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right"
+                        android:hint="Example:4200"
+                        android:imeOptions="actionDone"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal"
+                         />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image6layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/actualpointlayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/noteslayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/image6layout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left" >
+
+                      <com.MWC.chatapp.MyTextView
+                        android:id="@+id/notestxt"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="7dp"
+                        android:text="NOTES"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" 
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+
+                    <EditText
+                        android:id="@+id/notesedt"
+                        android:layout_width="200dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBaseline="@+id/notestxt"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right"
+                        android:hint="Example: Meds scheduled for 4/15@6pm-recieved 3 referrals "
+                        android:imeOptions="actionDone"
+                        android:paddingRight="5dp"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image7layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/noteslayout"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#000000" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/buttonlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/image7layout"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/Bussinesssubmitbtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#90EE90"
+                        android:gravity="center"
+                        android:text="ADD TO TRACKER"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                
+            </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+        
+        <SlidingDrawer
+        android:id="@+id/Events_slidingDrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/sdbg"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/EventsSDRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center" >
+
+                <Button
+                    android:id="@+id/Events_Wheel_Cancle_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Cancel" />
+
+                <TextView
+                    android:id="@+id/Events_WheelHeader_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/Events_Wheel_Done_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Done" />
+            </RelativeLayout>
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/Events_Wheel"
+                android:layout_width="fill_parent"
+                android:layout_height="210dp"
+                android:layout_below="@+id/EventsSDRelativeLayout" />
+        </RelativeLayout>
+    </SlidingDrawer>
+        
+        
+        
+    </RelativeLayout>
+
+</FrameLayout>

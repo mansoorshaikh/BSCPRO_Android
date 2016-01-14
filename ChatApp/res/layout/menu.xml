@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left" >
+
+    <RelativeLayout
+        android:id="@+id/Layoutmenubaar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="05dp" >
+
+        <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" >
+
+            <app.tabsample.SmartImageView.NormalSmartImageView
+                android:id="@+id/userimage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/chaticon" />
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/Chatusername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userimage"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="05dp"
+                android:text="welcome"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+        
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imagelayout"
+            >
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                
+
+        <RelativeLayout
+            android:id="@+id/DashboardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_Dashboard"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="True"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/icon_dashboard"
+                android:textColor="@android:color/white"
+                android:textSize="35dp" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_Dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_Dashboard"
+                android:layout_alignBottom="@+id/btn_Dashboard"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_Dashboard"
+                android:gravity="center"
+                android:text="DASHBOARD"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutmatchup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DashboardLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_matchup"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_matchup"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_matchup"
+                android:layout_alignBottom="@+id/btn_matchup"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_matchup"
+                android:gravity="center"
+                android:text="SUBMIT MATCH UP"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+
+    <!--     <RelativeLayout
+            android:id="@+id/LayoutMATCHUPBOOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layoutmatchup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_MATCHUPBOOK"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_matchup" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_MATCHUPBOOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_MATCHUPBOOK"
+                android:layout_alignBottom="@+id/btn_MATCHUPBOOK"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_MATCHUPBOOK"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="My MATCH UP BOOK"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+          </RelativeLayout> -->
+        
+        <RelativeLayout
+            android:id="@+id/Layoutguest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layoutmatchup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_guest"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_guest" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_guest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_guest"
+                android:layout_alignBottom="@+id/btn_guest"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_guest"
+                android:gravity="center"
+                android:text="ADD NEW GUEST"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Layoutrecruit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layoutguest"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_recruit"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="True"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/icon_newrecrut"
+                android:textColor="@android:color/white"
+                android:textSize="35dp" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_recruit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_recruit"
+                android:layout_alignBottom="@+id/btn_recruit"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_recruit"
+                android:gravity="center"
+                android:text="ADD NEW RECRUIT"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutbusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layoutrecruit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_business"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_addbussiness" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_business"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_business"
+                android:layout_alignBottom="@+id/btn_business"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_business"
+                android:gravity="center"
+                android:text="ADD BUSINESS"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/LayoutBPM_Check_In"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layoutbusiness"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_BPM_Check_In"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_bpm" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_BPM_Check_In"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_BPM_Check_In"
+                android:layout_alignBottom="@+id/btn_BPM_Check_In"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_BPM_Check_In"
+                android:gravity="center"
+                android:text="BPM CHECK-IN"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/chatlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutBPM_Check_In"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_chat"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="True"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/icon_chat"
+                android:textColor="@android:color/white"
+                android:textSize="35dp" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/btn_chat"
+                android:layout_alignBottom="@+id/btn_chat"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_chat"
+                android:gravity="center"
+                android:text="CHAT"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatlayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onMenuOptionClicked" >
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+               android:background="@android:color/transparent"
+               android:text="@string/icon_logout" 
+               android:textColor="@android:color/white"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <com.MWC.chatapp.MyTextView
+                android:id="@+id/text_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_logout"
+                android:layout_alignBottom="@+id/btn_logout"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_logout"
+                android:gravity="center"
+                android:text="LOGOUT"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                customfontdemo:fontName="calibri.ttf" />
+          </RelativeLayout>
+             
+        
+        
+           </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

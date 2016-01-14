@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+       <include layout="@layout/menu" />
+    
+
+        <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:background="#ffffff">
+            
+             <RelativeLayout
+                android:id="@+id/navigationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/navigation"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/menu_icon" />
+
+                <RelativeLayout
+                    android:id="@+id/menubuttonlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/menuBtn"
+                    android:background="@drawable/navigation"
+                    android:gravity="center" >
+
+                    <com.MWC.chatapp.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD NEW GUEST"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" 
+                        customfontdemo:fontName="calibri.ttf"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            
+             <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/navigationLayout" >
+          
+            <RelativeLayout
+                android:id="@+id/biglayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 android:layout_marginTop="20dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp" 
+                android:paddingBottom="35dp"
+                 >
+                
+                <RelativeLayout
+                android:id="@+id/TRAINEELIST_MAIN_LAYOUT"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                >
+                <Button
+                        android:id="@+id/TRAINEE_CANCLE_BTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@android:color/transparent"
+                        android:text="CANCEL"
+                        android:layout_margin="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/TRAINEE_ADD_BTN"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/plusicon" />
+                    
+                    <EditText
+                        android:id="@+id/TRAINEE_SEARCH_EDITTEXT"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_toLeftOf="@+id/TRAINEE_ADD_BTN"
+                        android:layout_toRightOf="@+id/TRAINEE_CANCLE_BTN"
+                        android:background="@drawable/roundes_edittext_border"
+                        android:hint="search" />
+
+                <RelativeLayout
+                android:id="@+id/TRAINEELIST_LAYOUT"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/TRAINEE_SEARCH_EDITTEXT"
+                >
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+           
+                <RelativeLayout
+                    android:id="@+id/MAILALL_LAYOUT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                
+                <RelativeLayout
+                android:id="@+id/guestnamelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left" >
+
+                <com.MWC.chatapp.MyTextView
+                    android:id="@+id/guestnametxt"
+                    android:layout_width="115dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:text="GUEST NAME"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    customfontdemo:fontName="calibri.ttf"
+                     />
+
+                <EditText
+                    android:id="@+id/guestnameedt"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBaseline="@+id/guestnametxt"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint="First Name"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imagelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/guestnamelayout"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000" >
+            </RelativeLayout>
+             
+              <RelativeLayout
+                android:id="@+id/lastnamelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imagelayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left" >
+
+                <com.MWC.chatapp.MyTextView
+                    android:id="@+id/lastnametxt"
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" 
+                    customfontdemo:fontName="calibri.ttf"
+                    />
+
+                <EditText
+                    android:id="@+id/lastnameedt"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBaseline="@+id/lastnametxt"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint="Last Name"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image1layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/lastnamelayout"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000" >
+            </RelativeLayout>
+            
+            
+             <RelativeLayout
+                android:id="@+id/EMAILlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/image1layout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left" >
+
+                <com.MWC.chatapp.MyTextView
+                    android:id="@+id/EMAILtxt"
+                    android:layout_width="75dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:text="EMAIL"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" 
+                    customfontdemo:fontName="calibri.ttf"
+                    />
+
+                <EditText
+                    android:id="@+id/EMAILeedt"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBaseline="@+id/EMAILtxt"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint="Email"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" 
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image2layoutnew"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EMAILlayout"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000" >
+            </RelativeLayout>
+            
+            
+            
+              <RelativeLayout
+                android:id="@+id/phonelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/image2layoutnew"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left" >
+
+                <com.MWC.chatapp.MyTextView
+                    android:id="@+id/phonetxt"
+                    android:layout_width="75dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:text="PHONE"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" 
+                    customfontdemo:fontName="calibri.ttf"
+                    />
+
+                <EditText
+                    android:id="@+id/phoneedt"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBaseline="@+id/phonetxt"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint="888-888-8888"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" 
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789-"
+                    android:maxLength="12"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image2layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/phonelayout"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000" >
+            </RelativeLayout>
+            
+                <RelativeLayout
+                android:id="@+id/bpmdatelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image2layout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left" >
+
+                 <com.MWC.chatapp.MyTextView
+                    android:id="@+id/bpmdatetxt"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:text="BPM DATE"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" 
+                    customfontdemo:fontName="calibri.ttf"
+                    />
+
+                <EditText
+                    android:id="@+id/bpmdateedt"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@+id/bpmdatetxt"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint="BPM Date"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" />
+                
+                 <EditText
+                    android:id="@+id/bpmondateEdittext"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bpmdateedt"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint="No BPM's On This Date"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" 
+                    android:focusable="false"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image3layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/bpmdatelayout"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000" >
+            </RelativeLayout>
+            
+                <RelativeLayout
+                android:id="@+id/invitedbylayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/image3layout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left" >
+
+                 <com.MWC.chatapp.MyTextView
+                    android:id="@+id/invitedbytxt"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:text="INVITED BY"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    customfontdemo:fontName="calibri.ttf"
+                     />
+
+                <EditText
+                    android:id="@+id/invitedbyedt"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBaseline="@+id/invitedbytxt"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint="Invited by"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image4layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/invitedbylayout"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+                android:background="#000000" >
+            </RelativeLayout>
+            
+               <RelativeLayout
+                android:id="@+id/invitedlastlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/image4layout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                 android:visibility="gone"
+                android:gravity="left" >
+
+                 <com.MWC.chatapp.MyTextView
+                    android:id="@+id/invitedlasttxt"
+                    android:layout_width="90dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:text="SMD"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    customfontdemo:fontName="calibri.ttf"
+                     />
+
+                <EditText
+                    android:id="@+id/invitedlastedt"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBaseline="@+id/invitedlasttxt"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image5layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/invitedlastlayout"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="3dp"
+                android:background="#000000" >
+            </RelativeLayout>
+            
+             
+               <RelativeLayout
+                android:id="@+id/buttonlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/image5layout"
+                android:layout_marginTop="1dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/Guestsubmitbtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#90EE90"
+                    android:gravity="center"
+                    android:text="ADD TO TRACKER"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+             
+            </RelativeLayout>
+
+           
+            </RelativeLayout>
+            </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+</FrameLayout>

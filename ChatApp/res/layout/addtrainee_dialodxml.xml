@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TRAINEE_dialog_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/white"    
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" 
+        android:paddingBottom="20dp"
+        >
+
+        <EditText
+            android:id="@+id/TRAINEE_NEW_ADD_EDITTEXT"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundes_edittext_border"
+            android:hint="add new trainee"
+            />
+        <Button
+            android:id="@+id/TRAINEE_DONE_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TRAINEE_NEW_ADD_EDITTEXT"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="DONE"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" 
+            />
+        <Button
+            android:id="@+id/TRAINEE_CANCLE_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TRAINEE_NEW_ADD_EDITTEXT"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/TRAINEE_DONE_button"
+            android:background="@android:color/transparent"
+            android:text="CANCEL"
+            android:layout_marginRight="15dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" 
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

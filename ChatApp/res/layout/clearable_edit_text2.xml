@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:alpha="0.2"
+        android:background="@android:color/white" >
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/clearable_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:gravity="center|left"
+        android:alpha="0.7"
+        android:hint="PASSWORD"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingLeft="50dip"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/clearable_button_clear"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:alpha="0.7"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/transparentimageicon"
+        android:text="@string/icon_LOCK"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/lightborder"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/menu_icon" />
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/menuBtn" >
+
+                <Button
+                    android:id="@+id/All_UserList_Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/plusicon"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/profiletitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="My Match Up Book"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+         <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_below="@+id/Layout"
+        >
+
+        <RelativeLayout
+            android:id="@+id/biglayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="35dp" >
+
+            <RelativeLayout
+                android:id="@+id/TRAINEELIST_MAIN_LAYOUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/TRAINEE_CANCLE_BTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="CANCEL"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/TRAINEE_ADD_BTN"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/plusicon"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/TRAINEE_SEARCH_EDITTEXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_toLeftOf="@+id/TRAINEE_ADD_BTN"
+                    android:layout_toRightOf="@+id/TRAINEE_CANCLE_BTN"
+                    android:background="@drawable/roundes_edittext_border"
+                    android:focusable="true"
+                    android:hint="search" />
+
+                <RelativeLayout
+                    android:id="@+id/TRAINEELIST_LAYOUT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TRAINEE_SEARCH_EDITTEXT" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/MAILALL_LAYOUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+                    <RelativeLayout
+                        android:id="@+id/mainlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="20dp" >
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>
